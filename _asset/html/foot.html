@@ -1,0 +1,36 @@
+            <div class="top-btn wow fadeInUp">
+                <i class="fa fa-angle-up fa-2x"></i>
+            </div>
+
+        </div>
+
+        <footer>
+            <div id="footer" class="ch-row ch-align-center">
+                <span class="ch-xs-12 ch-sm-12">
+                    &copy; <!--concatem:copyright-->
+                </span>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        $(function() {
+            'use strict';
+
+            // click event of back-to-top button
+            $('.top-btn').click(function() {
+                $('body').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // navigation select event
+            $('#nav-select').change(function () {
+                window.location.href = $(this).val();
+            });
+        });
+
+    </script>
+
+</body>
+</html>
