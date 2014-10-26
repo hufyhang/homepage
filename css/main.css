@@ -248,6 +248,7 @@ footer span {
 #contact-form textarea {
   width: 100%;
   border: none;
+  border-radius: 0;
   border-bottom: 2px solid black;
 }
 
@@ -257,6 +258,7 @@ footer span {
   outline: none;
   /*box-shadow: none;*/
   border: none;
+  border-radius: 0;
   border-bottom: 2px solid red;
 }
 
