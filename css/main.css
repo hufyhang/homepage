@@ -294,3 +294,7 @@ footer span {
   font-weight: bold;
   text-align: left;
 }
+
+.justify {
+  text-align: justify;
+}
