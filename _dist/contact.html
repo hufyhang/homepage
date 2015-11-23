@@ -1,4 +1,158 @@
-<!doctype html><html lang="en-us"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Contact | Feifei Hang</title><meta name="description" content="A PhD candidate, passionates about Front-End Development."><meta name="author" content="Feifei Hang"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="img/avatar.png"><link rel="stylesheet" href="css/normalize.css"><link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" href="css/chopjs-layout.css"><link rel="stylesheet" href="css/animate.css"><link rel="stylesheet" href="css/main.css"><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css"><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script src="js/wow.min.js"></script><script>new WOW().init();</script></head><body><div class="container"><header id="banner" class="wow fadeInDown ch-row ch-align-center"><hgroup><h1 id="website-title" class="ch-xs-12 ch-sm-12">Feifei Hang</h1><div id="subtitle" class="ch-xs-0 ch-sm-12">A PhD candidate, passionates about Front-End Development.</div><div class="ch-xs-12 ch-sm-12"><div class="ch-row ch-align-center"><ul class="ch-xs-0 ch-sm-12"><li><a href="index.html">Home</a></li><li><a href="work.html">Work</a></li><li><a href="contact.html">Contact</a></li></ul><select name="nav-select" id="nav-select" class="ch-xs-12 ch-sm-0"><option value="hint">Navigate...</option><option value="index.html">Home</option><option value="work.html">Work</option><option value="contact.html">Contact</option></select></div></div></hgroup></header><div class="wrapper"><img src="img/contact/Get_In_Touch.jpg" alt="Get in touch" class="round wow fadeInUp"><p class="centered wow fadeInUp">Get in touch.</p><div class="content-row ch-row wow fadeInUp"><div class="left ch-xs-12 ch-sm-7"><a href="https://goo.gl/maps/NEK5X" target="_blank"><img class="content-img round kinda-big" src="img/contact/map.jpg" alt="Map"></a></div><div class="right ch-xs-12 ch-sm-5"><h3 class="content-title-right">Onsite office</h3><p>My office is located in Kilburn buiding on Oxford Road, Manchester, UK.</p><p>You can click the map for a bigger and interactive one in Google Maps.</p><p>Alternatively, try <a href="http://www.openstreetmap.org/way/75361245#map=17/53.46717/-2.23352" target="_blank">OpenStreetMap</a>.</p></div></div><div class="content-row wow fadeInUp"><h3 class="content-title-right">Drop an email</h3><form id="contact-form" action="https://mandrillapp.com/api/1.0/messages/send.json" method="post"><input type="hidden" name="key" value="HBB9EUFmZB_YjlulngHBeA"> <input type="hidden" name="message[to][0][email]" value="feifei.hang@yahoo.com"> <input type="hidden" name="message[to][0][name]" value="Feifei Hang"> <input type="hidden" name="message[to][0][type]" value="to"> <input type="hidden" name="message[html]" id="message" value=""><ul><li><label for="message[from_name]">Name:</label><span class="required">*</span></li><li><input type="text" name="message[from_name]" placeholder="e.g. Feifei Hang" required></li><li><label for="message[from_email]">Email:</label><span class="required">*</span></li><li><input type="email" name="message[from_email]" placeholder="e.g. someone@email.com" required></li><li><label for="message[subject]">Subject:</label></li><li><input type="text" name="message[subject]" placeholder="e.g. A Job Offer" value="Query sent from homepage"></li><li><label for="msg">Message:</label><span class="required">*</span></li><li><textarea id="msg" rows="6" name="msg" form="contact-form" autocomplete="off" placeholder="Hmm..." required></textarea></li><li id="submit-li"><input type="submit" value="Send"></li><li id="success-li"></li></ul></form></div><script>$(document).ready(function(){
+<!--concatem:set:title = {"text": "Contact | Feifei Hang"}-->
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact | Feifei Hang</title>
+        <meta name="description" content="A PhD candidate, passionates about Front-End Development.">
+        <meta name="author" content="Feifei Hang">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="icon" href="img/avatar.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/chopjs-layout.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lte IE 9]>
+            <link rel="stylesheet" href="css/ie.css">
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]>
+
+        <!--Fonts from Google's Web font directory at http://google.com/webfonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- wow.js for asynchronous content showing -->
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header id="banner" class="wow fadeInDown ch-row ch-align-center">
+                <hgroup>
+                    <div id="ie-wrapper">
+                        <h1 id="website-title" class="ch-xs-12 ch-sm-12">Feifei Hang</h1>
+                        <div id="subtitle" class="ch-xs-0 ch-sm-12">A PhD candidate, passionates about Front-End Development.</div>
+                        <div id="nav-container" class="ch-xs-12 ch-sm-12">
+                            <div class="ch-row ch-align-center" id="nav-list">
+  <ul class="ch-xs-0 ch-sm-12">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <select name="nav-select" id="nav-select" class="ch-xs-12 ch-sm-0">
+    <option value="hint">Navigate...</option>
+    <option value="index.html">Home</option>
+    <option value="work.html">Work</option>
+    <option value="contact.html">Contact</option>
+  </select>
+</div>
+
+
+                        </div>
+
+                    </div>
+                </hgroup>
+            </header>
+
+            <div class="wrapper">
+
+        <!-- end of head template -->
+
+
+<img src="img/contact/Get_In_Touch.jpg" alt="Get in touch" class="round wow fadeInUp">
+
+<p class="centered wow fadeInUp">
+  Get in touch.
+</p>
+
+<!-- map -->
+<div class="content-row ch-row wow fadeInUp">
+  <div class="left ch-xs-12 ch-sm-7">
+    <a href="https://goo.gl/maps/NEK5X" target="_blank">
+      <img class="content-img round kinda-big" src="img/contact/map.jpg" alt="Map">
+    </a>
+  </div>
+
+  <div class="right ch-xs-12 ch-sm-5">
+    <h3 class="content-title-right">Onsite office</h3>
+
+    <p>My office is located in Kilburn buiding on Oxford Road, Manchester, UK.</p>
+
+    <p>You can click the map for a bigger and interactive one in Google Maps.</p>
+
+    <p>Alternatively, try <a href="http://www.openstreetmap.org/way/75361245#map=17/53.46717/-2.23352" target="_blank">OpenStreetMap</a>.</p>
+
+  </div>
+</div>
+
+
+<!-- contact form -->
+<div class="content-row wow fadeInUp">
+  <h3 class="content-title-right">Drop an email</h3>
+
+  <form id="contact-form" action="https://mandrillapp.com/api/1.0/messages/send.json" method="post">
+    <input type="hidden" name="key" value="HBB9EUFmZB_YjlulngHBeA">
+    <input type="hidden" name="message[to][0][email]" value="feifei.hang@yahoo.com">
+    <input type="hidden" name="message[to][0][name]" value="Feifei Hang">
+    <input type="hidden" name="message[to][0][type]" value="to">
+    <input type="hidden" name="message[html]" id="message" value="">
+    <ul>
+      <!-- name -->
+      <li>
+        <label for="message[from_name]">Name:</label><span class="required">*</span>
+      </li>
+      <li>
+        <input type="text" name="message[from_name]" placeholder="e.g. Feifei Hang" required>
+      </li>
+
+      <!-- email -->
+      <li>
+        <label for="message[from_email]">Email:</label><span class="required">*</span>
+      </li>
+      <li>
+        <input type="email" name="message[from_email]" placeholder="e.g. someone@email.com" required>
+      </li>
+
+      <!-- subject -->
+      <li>
+        <label for="message[subject]">Subject:</label>
+      </li>
+      <li>
+        <input type="text" name="message[subject]" placeholder="e.g. A Job Offer" value="Query sent from homepage">
+      </li>
+
+      <!-- message -->
+      <li>
+        <label for="msg">Message:</label><span class="required">*</span>
+      </li>
+      <li>
+        <textarea id="msg" rows="6" name="msg" form="contact-form" autocomplete="off" placeholder="Hmm..." required></textarea>
+      </li>
+
+      <li id="submit-li">
+        <input type="submit" value="Send">
+      </li>
+      <li id="success-li">
+      </li>
+
+    </ul>
+  </form>
+</div>
+
+
+<!-- JavaScript to keep staying on this page after form submit -->
+<script>
+$(document).ready(function(){
   'use strict';
 
    var $form = $('form');
@@ -13,7 +167,27 @@
     },'json');
     return false;
   });
- });</script><div class="top-btn wow fadeInUp"><i class="fa fa-angle-up fa-2x"></i></div></div><footer><div id="footer" class="ch-row ch-align-center"><span class="ch-xs-12 ch-sm-12">&copy; 2012 - 2014</span></div></footer></div><script>$(function() {
+ });
+</script>
+
+
+            <div class="top-btn wow fadeInUp">
+                <i class="fa fa-angle-up fa-2x"></i>
+            </div>
+
+        </div>
+
+        <footer>
+            <div id="footer" class="ch-row ch-align-center">
+                <span class="ch-xs-12 ch-sm-12">
+                    &copy; 2012 - 2014
+                </span>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        $(function() {
             'use strict';
 
             // click event of back-to-top button
@@ -27,4 +201,9 @@
             $('#nav-select').change(function () {
                 window.location.href = $(this).val();
             });
-        });</script></body></html>
+        });
+
+    </script>
+
+</body>
+</html>

@@ -17,6 +17,11 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <!--[if lte IE 9]>
+            <link rel="stylesheet" href="css/ie.css">
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]>
+
         <!--Fonts from Google's Web font directory at http://google.com/webfonts -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
@@ -32,10 +37,13 @@
 
             <header id="banner" class="wow fadeInDown ch-row ch-align-center">
                 <hgroup>
-                    <h1 id="website-title" class="ch-xs-12 ch-sm-12"><!--concatem:name--></h1>
-                    <div id="subtitle" class="ch-xs-0 ch-sm-12"><!--concatem:subtitle--></div>
-                    <div class="ch-xs-12 ch-sm-12">
-                        <!--concatem:nav-->
+                    <div id="ie-wrapper">
+                        <h1 id="website-title" class="ch-xs-12 ch-sm-12"><!--concatem:name--></h1>
+                        <div id="subtitle" class="ch-xs-0 ch-sm-12"><!--concatem:subtitle--></div>
+                        <div id="nav-container" class="ch-xs-12 ch-sm-12">
+                            <!--concatem:nav-->
+                        </div>
+
                     </div>
                 </hgroup>
             </header>

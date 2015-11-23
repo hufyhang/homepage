@@ -1,0 +1,31 @@
+header {
+  background: url("/img/html-code.jpg");
+}
+
+#nav-select {
+  display: none;
+}
+
+#website-title, #subtitle {
+  text-align: center;
+}
+
+#nav-list {
+  list-style-type: none;
+}
+
+#nav-list li {
+  display: inline;
+}
+
+#nav-container {
+  text-align: center;
+}
+
+.top-btn {
+  display: none;
+}
+
+.footer {
+  text-align: center;
+}
