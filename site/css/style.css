@@ -1,0 +1,262 @@
+* {
+  font-family: "Dosis", "helvetica neue", sans-serif !important;
+  font-weight: 400;
+}
+
+body {
+  position: relative;
+}
+
+header, section {
+  padding: 50px 0;
+}
+
+header {
+  display: table;
+  background-color: #0D2F3F;
+  background-image: url("/img/header.jpg");
+  background-size: 512px 512px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 500px;
+  width: 100%;
+}
+
+#title-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  color: #FFF;
+}
+
+#main-title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 5em;
+}
+
+#subtitle {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+section {
+  display: table;
+  width: 100%;
+}
+
+.section-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+section#greetings {
+  background: #BE4E58;
+  color: #FFF;
+  font-size: 1.5rem;
+}
+
+#avatar {
+  display: block;
+  margin: 20px auto;
+  border-radius: 100%;
+  height: 143px;
+  width: 143px;
+  background: #FFD350 url("/img/cartoon.jpg") no-repeat;
+}
+
+section#greetings p {
+  font-size: 1.5rem;
+}
+
+#social-links {
+  list-style: none !important;
+}
+
+.sprite a {
+  display: block;
+  margin: 15px auto;
+  width: 50px;
+  height: 50px;
+  text-indent: 120%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url("/img/sprite.png");
+}
+
+#github {
+  background-position: 0 0;
+}
+
+#blog {
+  background-position: 0 -49px;
+}
+
+#facebook {
+  background-position: 0 -98px;
+}
+
+#linkedin {
+  background-position: 0 -147px;
+}
+
+section#works {
+  background-image: url("/img/project-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.leading {
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 2.5em !important;
+}
+
+.with-border {
+  border: 5px solid #FFF;
+  width: 300px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 40em) {
+  .with-border {
+    width: 600px;
+  }
+}
+
+#works-intro {
+  color: #FFF;
+  font-size: 1.5rem;
+  padding: 30px 0;
+}
+
+.inline-anchor {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.inline-anchor:link {
+  color: #FFF;
+  text-decoration: underline;
+}
+.inline-anchor:visited {
+  color: #FFF;
+  text-decoration: underline;
+}
+.inline-anchor:hover {
+  color: #CACACA;
+  text-decoration: underline;
+}
+.inline-anchor:active {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+
+.no-spacing {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#projects {
+  list-style: none;
+}
+
+.project {
+  padding: 0;
+}
+
+@media screen and (min-width: 40em) {
+  .project {
+    padding: 5px;
+  }
+}
+
+
+.project > .project-content {
+  display: block;
+  height: 200px;
+  padding: 20px 5px;
+  text-align: center;
+  color: #FFF;
+  background: rgba(51, 57, 79, 0.65);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 1.5rem !important;
+}
+
+.project > .project-content:link,
+.project > .project-content:visited,
+.project > .project-content:hover,
+.project > .project-content:active {
+  color: #FFF;
+}
+
+/*.project > .project-content::before,
+.project > .project-content::after {
+  display: block;
+  font-size: 5rem;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+}
+
+.project > .project-content::before {
+  content: open-quote;
+}
+
+.project > .project-content::after {
+  content: close-quote;
+}
+*/
+
+.project-title {
+  display: block;
+  font-size: 2rem !important;
+}
+
+.project-role {
+  display: block;
+  font-size: 1.3rem !important;
+  padding: 5px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+#vietshack {
+  background-image: url("/img/vietshack.jpg");
+}
+
+#geminitakeaway {
+  background-image: url("/img/gemini.jpg");
+}
+
+#herballand {
+  background-image: url("/img/herballand.jpg");
+}
+
+footer {
+  background: #1D2027;
+  color: #999;
+  font-size: 1.3rem;
+}
+
+footer > div {
+  padding: 50px 0;
+}
+
+#hireme-link {
+  width: 100% !important;
+  font-size: 2rem !important;
+  font-weight: 500;
+  margin: 0 auto;
+}
