@@ -81,4 +81,37 @@
       }, 500);
     });
   });
+
+
+  // Register Vim motion keys (i.e. j, k, gg, G)
+  var step = 50;
+  var preKey;
+  $window.on('keypress', function (evt) {
+    var key = evt.keyCode;
+
+    if (key === 103) { // key: g
+      if (preKey === true) {
+        $window.scrollTop(0);
+        preKey = false;
+      } else {
+        preKey = true;
+      }
+      return;
+    }
+
+    preKey = false;
+
+    if (key === 106) { // key: j
+      $window.scrollTop($window.scrollTop() + step);
+      return;
+    }
+    else if (key === 107) { // key: k
+      $window.scrollTop($window.scrollTop() - step);
+      return;
+    }
+    else if (key === 71) { // key: G
+      $window.scrollTop($body.innerHeight());
+      return;
+    }
+  });
 })(window, document, jQuery);
