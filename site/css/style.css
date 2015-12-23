@@ -24,6 +24,7 @@ header {
 }
 
 #title-wrapper {
+  position: relative;
   display: table-cell;
   vertical-align: middle;
   color: #FFF;
@@ -43,6 +44,72 @@ header {
 
 .title {
   font-size: 2rem;
+}
+
+#scroll-btn {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 70px;
+  margin: 30px auto;
+  border: 2px solid #FFF;
+  border-radius: 20px;
+}
+
+#scroll-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #FFF;
+  border-radius: 100%;
+  top: 20%;
+  left: 50%;
+  margin-left: -5px;
+  -webkit-animation: scrolling 3s linear infinite;
+  animation: scrolling 3s linear infinite;
+}
+
+@-webkit-keyframes scrolling {
+  0% {
+    opacity: 1;
+    top: 20%;
+  }
+
+  25% {
+    opacity: 1;
+    top: 50%;
+  }
+
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 10%;
+  }
+}
+@keyframes scrolling {
+  0% {
+    opacity: 1;
+    top: 20%;
+  }
+
+  25% {
+    opacity: 1;
+    top: 50%;
+  }
+
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+
+  100% {
+    opacity: 0;
+    top: 10%;
+  }
 }
 
 section {
@@ -298,12 +365,39 @@ footer > div {
 }
 
 #hireme-link {
+  position: relative;
+  overflow: hidden;
   width: 100% !important;
   font-size: 2rem !important;
   font-weight: 500;
   margin: 0 auto;
+  border: none;
 }
 
+/*#hireme-link:hover {
+  background: #2199e8;
+}
+*/
+#hireme-content {
+  position: relative;
+  z-index: 2;
+}
+/*
+#hireme-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: #47CE84;
+  z-index: 1;
+  transition: width 0.3s ease-in-out;
+}
+
+#hireme-link:hover #hireme-mask {
+  width: 100%;
+}
+*/
 @media screen and (max-width: 40em) {
   section#works {
     padding: 50px 0 0 0;

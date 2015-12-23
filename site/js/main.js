@@ -35,7 +35,8 @@
     var height = $content.innerHeight() + padding;
     $greeting.css('height', height + 'px');
     $bgLeft.css('height', height * 2 + 'px');
-    $bgRight.css('height', height * 2 + 'px');
+    $bgRight.css('height', height * 2 + 'px')
+            .css('width', $window.innerWidth() + 'px');
 
     $avatarLeft.css('left', $window.innerWidth() / 2 - offset + 'px');
     $avatarRight.css('left', $window.innerWidth() / 2 - offset + 'px');
@@ -54,5 +55,20 @@
   $externals.each(function () {
     var $this = $(this);
     $this.attr('target', '_blank');
+  });
+
+  // Set scrolling anchors.
+  var $body = $('html, body');
+  var $scrollings = $('a[rel*=scroll]');
+  $scrollings.each(function () {
+    var $this = $(this);
+    var $target = $this.attr('href');
+    $target = $($target);
+    $this.on('click', function (evt) {
+      evt.preventDefault();
+      $body.animate({
+        scrollTop: $target.offset().top
+      }, 500);
+    });
   });
 })(window, document, jQuery);
