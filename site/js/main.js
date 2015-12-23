@@ -2,9 +2,20 @@
   'use strict';
   var $window = $(window);
 
+  var $header = $('header');
+
+  // Set header's background image to hat.png when it's day time.
+  // Day time: 7:00 -- 18:00
+  var hour = new Date();
+  hour = hour.getHours();
+  if (7 <= hour && hour <= 17) {
+    var bgColor = '#D2E374';
+    $header.css('background-color', bgColor)
+      .css('background-image', 'url("/img/hat.png")');
+  }
+
   // Set header's height to window's innerHeight.
   // Also, applies to sections
-  var $header = $('header');
   var $sections = $('section');
   var setHeight = function setHeight ($els, $target) {
     $els.forEach(function ($el) {
