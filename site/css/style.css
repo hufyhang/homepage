@@ -220,6 +220,10 @@ section#works {
   background-attachment: fixed;
 }
 
+#work-title {
+  display: inline;
+}
+
 .leading {
   text-transform: uppercase;
   color: #FFF;

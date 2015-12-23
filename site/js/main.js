@@ -58,7 +58,7 @@
 
   // Set scrolling anchors.
   var $body = $('html, body');
-  var $scrollings = $('a[rel*=scroll]');
+  var $scrollings = $('a[data-type*=scroll]');
   $scrollings.each(function () {
     var $this = $(this);
     var $target = $this.attr('href');
