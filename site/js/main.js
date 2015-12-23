@@ -8,8 +8,7 @@
   var $sections = $('section');
   var setHeight = function setHeight ($els, $target) {
     $els.forEach(function ($el) {
-      $el.css('height', $target.innerHeight() + 'px')
-      .css('min-height', $target.innerHeight() + 'px');
+      $el.css('height', $target.innerHeight() + 'px');
     });
   };
   setHeight([$header, $sections], $window);
@@ -34,8 +33,8 @@
   var setMagicHeight = function setMagicHeight () {
     var height = $content.innerHeight() + padding;
     $greeting.css('height', height + 'px');
-    $bgLeft.css('height', height * 2 + 'px');
-    $bgRight.css('height', height * 2 + 'px')
+    $bgLeft.css('height', height + 'px');
+    $bgRight.css('height', height + 'px')
             .css('width', $window.innerWidth() + 'px');
 
     $avatarLeft.css('left', $window.innerWidth() / 2 - offset + 'px');

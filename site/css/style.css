@@ -119,6 +119,7 @@ section {
 }
 
 section#greetings {
+  background: #71CFC1;
   color: #FFF;
   font-size: 1.5rem;
   overflow: hidden;
@@ -139,8 +140,6 @@ section#greetings {
   z-index: 2;
   background: #325273;
   left: 0;
-  margin-top: -50px;
-  margin-bottom: -50px;
   right: 0;
   overflow: hidden;
 }
@@ -150,8 +149,6 @@ section#greetings {
   background: #BE4E58;
   z-index: 1;
   left: 0;
-  margin-top: -50px;
-  margin-bottom: -50px;
   right: 0;
 }
 
