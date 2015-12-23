@@ -67,7 +67,9 @@ section#greetings {
   border-radius: 100%;
   height: 143px;
   width: 143px;
-  background: #FFD350 url("/img/cartoon.jpg") no-repeat;
+  background: #78C3EB url("/img/cartoon.png") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 section#greetings p {
