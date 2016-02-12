@@ -351,6 +351,10 @@ section#works {
   font-weight: 300;
 }
 
+#livety {
+  background-image: url("/img/livety.jpg");
+}
+
 #vietshack {
   background-image: url("/img/vietshack.jpg");
 }
